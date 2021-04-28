@@ -1,0 +1,9 @@
+*.properties
+*.iml
+.idea
+*.swp
+*.project
+*.classpath
+*.prefs
+target
+.settings
