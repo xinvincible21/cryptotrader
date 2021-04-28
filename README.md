@@ -1,2 +1,1 @@
 # cryptotrader
-# cryptotrader
