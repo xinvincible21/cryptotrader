@@ -64,6 +64,7 @@ object CryptoSymbol extends Enumeration {
   val Polygon = Value("maticusd")
   val InjectiveProtocol = Value("injusd")
   val Sushiswap = Value("sushiusd")
+  val Dogecoin = Value("dogeusd")
 
   def toCryptoSymbol(s:String) = CryptoSymbol.values.find(_.toString == s)
 }
