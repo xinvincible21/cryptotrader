@@ -49,16 +49,15 @@ object CryptoCancelOrder {
     val confirmation = scanner.next()
     confirmation.toLowerCase match {
       case "y" =>
-        placeOrder(orderID, environment)
+        cancelOrder(orderID, environment)
       case "_" => println("Exiting")
 
     }
   }
-  def placeOrder(orderID:Long, environment: Environment) = {
+  def cancelOrder(orderID:Long, environment: Environment) = {
 
     val key     = environment.apiSecret.getBytes(StandardCharsets.UTF_8)
     val hm384   = new HmacUtils(HmacAlgorithms.HMAC_SHA_384, key)
-    val orderId = UUID.randomUUID()
 
     val nonce = System.currentTimeMillis()
 
@@ -67,7 +66,7 @@ object CryptoCancelOrder {
          |{
          |  "request": "$cancelOrderPath",
          |  "nonce": "$nonce",
-         |  "client_order_id": "$orderId"
+         |  "order_id": "$orderID"
          |}
          |""".stripMargin
     val encoder   = Base64.getEncoder
