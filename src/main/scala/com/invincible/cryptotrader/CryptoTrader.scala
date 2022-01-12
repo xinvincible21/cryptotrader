@@ -69,7 +69,7 @@ object CryptoTrader {
     confirmation.toLowerCase match {
       case "y" =>
         placeOrder(side, amount, price, symbol.get.toString, environment)
-      case "_" => println("Exiting")
+      case _ => println("Exiting")
 
     }
   }

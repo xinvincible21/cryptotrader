@@ -50,7 +50,7 @@ object CryptoCancelOrder {
     confirmation.toLowerCase match {
       case "y" =>
         cancelOrder(orderID, environment)
-      case "_" => println("Exiting")
+      case _ => println("Exiting")
 
     }
   }
