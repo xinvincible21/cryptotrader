@@ -101,6 +101,9 @@ object CryptoSymbol extends Enumeration {
   val SuperRare = Value("rareusd")
   val TerraUSD = Value("ustusd")
   val Numeraire = Value("nmrusd")
+  val Rally = Value("rlyusd")
+  val Tokemak = Value("tokeusd")
+  val LidoDAOToken = Value("ldousd")
 
   def toCryptoSymbol(s:String) = CryptoSymbol.values.find(_.toString == s)
 }
