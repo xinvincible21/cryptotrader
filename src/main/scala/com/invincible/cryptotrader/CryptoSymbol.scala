@@ -129,6 +129,7 @@ object CryptoSymbol extends Enumeration {
   val DOGEBTC = Value("dogebtc")
   val GUSDSGD = Value("gusdsgd")
   val LUSDUSD = Value("lusdusd")
+  val PEPEUSD = Value("pepeusd")
 
   def toCryptoSymbol(s:String) = CryptoSymbol.values.find(_.toString == s)
 }

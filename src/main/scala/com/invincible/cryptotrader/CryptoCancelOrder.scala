@@ -1,6 +1,5 @@
 package com.invincible.cryptotrader
 
-import com.invincible.cryptotrader.CryptoCancelAll.cancelAllPath
 import com.invincible.cryptotrader.Models.Environment
 import org.apache.commons.codec.digest.{HmacAlgorithms, HmacUtils}
 
