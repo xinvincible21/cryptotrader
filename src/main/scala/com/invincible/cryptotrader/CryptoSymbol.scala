@@ -96,6 +96,19 @@ object CryptoSymbol extends Enumeration {
   val Bonafida = Value("fidausd")
   val Revv = Value("revvusd")
 
+  val Avalanche = Value("avaxusd")
+  val Polkadot = Value("dotusd")
+  val XRP = Value("xrpusd")
+  val Cosmos = Value("atomusd")
+  val ImmutableX = Value("imxusd")
+  val Helium = Value("hntusd")
+  val EternityChain = Value("ernusd")
+  val AletheaArtificialLiquidIntelligenceToken = Value("aliusd")
+  val IoTex = Value("iotxusd")
+  val Galxe = Value("galusd")
+  val Tether = Value("usdtusd")
+  val Samoyedcoin = Value("samousd")
+
   //conversions
   val ETHBTC = Value("ethbtc")
   val ZECBTC = Value("zecbtc")
@@ -130,6 +143,10 @@ object CryptoSymbol extends Enumeration {
   val GUSDSGD = Value("gusdsgd")
   val LUSDUSD = Value("lusdusd")
   val PEPEUSD = Value("pepeusd")
+  val BTCUSDT = Value("btcusdt")
+  val ETHUSDT = Value("ethusdt")
+  val GUSDGBP = Value("gusdgbp")
+
 
   def toCryptoSymbol(s:String) = CryptoSymbol.values.find(_.toString == s)
 }
