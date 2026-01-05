@@ -160,8 +160,6 @@ object CryptoSymbol extends Enumeration {
   val ETHUSDT = Value("ethusdt")
   val GUSDGBP = Value("gusdgbp")
 
-
-
   def toCryptoSymbol(s:String) = CryptoSymbol.values.find(_.toString == s)
 }
 
